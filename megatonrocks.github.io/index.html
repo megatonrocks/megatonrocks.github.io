@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Megaton rocks!</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+
+    .videoWrapperLandscape {
+      position: relative;
+	  padding-bottom: 53%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+
+    .videoWrapperPortrait {
+      position: relative;
+      padding-bottom: 176%;
+      /* 9:16 */
+      padding-top: 25px;
+      height: 0;
+    }
+    
+    .videoWrapperLandscape iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+	
+    .videoWrapperPortrait iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .backgroundPic {
+      background-image: url('images/background-1.png');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    
+    .backgroundColor {
+      background-color: #1b1e1f;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    
+
+    #background-video {
+      width: 100vw;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+
+    }
+
+    #svg {
+      width: 100%;
+      height: 50%;
+      margin-top: 30%;
+      margin-bottom: 0%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+	.bg{
+		top:0px;
+		position: absolute;
+		margin-top:480px;
+		z-index: 200;
+	}
+    </style>
+
+  <!-- Scripts Jquery etc
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('.bg').parallax("50%", 0.4);
+
+})
+</script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="section">
+  <div class="row">
+    <div class="column" >
+	  <div class="">
+	        <svg 
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="2560"
+            height="640"
+            viewBox="0 0 2560 640"
+            version="1.1"
+            id="svg">
+          <g id="layer1">
+			  <path
+				 style="fill:#ffffff;fill-opacity:1;stroke-width:0.0" 
+				 d="m 1679.4311,269.52941 c -57.9021,0 -105.09,47.13513 -105.09,104.97369 0,57.83856 47.1879,104.9738 105.09,104.9738 58.1081,0 105.0881,-47.13524 105.0881,-104.9738 0,-57.83856 -46.98,-104.97369 -105.0881,-104.97369 z m -591.2962,0.5231 c -57.9021,0 -105.09003,47.13514 -105.09003,104.9737 0,58.04438 47.18793,104.97379 105.09003,104.97379 24.3147,0 46.5689,-8.23306 64.29,-22.02374 L 1189.1018,480 v -80.27434 l -106.1194,-57.22128 v 51.45936 l 47.8069,25.72877 c -11.1271,10.70323 -26.1697,17.08311 -42.6544,17.08311 -33.9994,0 -61.8169,-27.58138 -61.8169,-61.74941 0,-33.96211 27.8175,-61.74931 61.8169,-61.74931 22.4603,0 42.0345,11.93894 52.9556,29.8462 h 47.1882 c -13.5998,-42.40118 -53.1627,-73.07059 -100.1438,-73.07059 z m 706.9406,1.58439 v 205.83187 h 41.2106 V 374.55379 l 123.6337,102.91498 V 271.6369 h -41.2105 v 102.91689 z m -985.55811,0.0994 50.07187,92.6231 h -50.07187 v 113.20685 h 164.8462 L 949.6361,436.40064 h -98.90809 v -30.87379 h 82.42313 l -49.86562,-92.62503 h 91.07807 V 271.73626 Z M 566.48364,271.76986 455.21364,477.6 H 797.26801 L 685.99802,271.77005 626.24177,382.30128 Z m 745.06126,1.15872 -111.27,205.82995 h 222.5418 z m 88.5075,1.19059 v 51.45753 h 61.8169 v 154.37434 h 41.2105 V 325.5767 h 61.8189 v -51.45753 z m 279.3787,38.63443 c 34.2054,0 61.8169,27.58138 61.8169,61.74931 0,34.16803 -27.6115,61.74941 -61.8169,61.74941 -34.2056,0 -61.8187,-27.58138 -61.8187,-61.74941 0,-34.16793 27.6131,-61.74931 61.8187,-61.74931 z m -1112.94746,54.31498 37.50375,69.36556 h -75.00562 z m 119.51438,0 37.50187,69.36556 h -75.00562 z m 625.54688,1.15872 37.5019,69.36566 h -75.0038 z"
+				 id="path1451"  />
+          </g>
+        </svg>
+	  </div>
+      <div class="headervideo">
+        
+        <video id="background-video" autoplay loop muted poster="images/values-bg.jpg">
+          <source src="video_bw.mp4" type="video/mp4">
+        </video>
+	  </div>
+      <div class="bg">
+        <svg 
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="2560"
+            height="640"
+            viewBox="0 0 2560 640"
+            version="1.1"
+            id="svg">
+          <g id="layer2">
+			  <path
+				 style="fill:#ffffff;fill-opacity:0.1;stroke-width:0.0" 
+				 d="M 2429.791 0 C 2297.7392 0 2190.123 107.49748 2190.123 239.4043 C 2190.123 371.31113 2297.7392 478.80664 2429.791 478.80664 C 2477.8295 478.80664 2522.5259 464.67187 2560 440.37891 L 2560 293.57812 C 2538.8 344.51635 2488.5672 380.22852 2429.791 380.22852 C 2351.7815 380.22852 2288.8066 317.32608 2288.8066 239.40234 C 2288.8066 161.47881 2351.7815 98.578125 2429.791 98.578125 C 2488.5674 98.578125 2538.8001 134.29067 2560 185.22852 L 2560 38.427734 C 2522.5259 14.134443 2477.8295 6.8685019e-15 2429.791 0 z M 1081.2793 1.1933594 C 949.22751 1.1933594 841.61133 108.68888 841.61133 240.5957 C 841.61133 372.97193 949.22751 480 1081.2793 480 C 1136.7314 480 1187.4838 461.22453 1227.8984 429.77344 L 1311.5449 480 L 1311.5449 296.92578 L 1069.5293 166.42773 L 1069.5293 283.78516 L 1178.5566 342.46289 C 1153.1803 366.87272 1118.8741 381.42186 1081.2793 381.42188 C 1003.74 381.42188 940.29883 318.51944 940.29883 240.5957 C 940.29883 163.14158 1003.74 99.771484 1081.2793 99.771484 C 1132.5022 99.771484 1177.1441 126.99853 1202.0508 167.83789 L 1309.668 167.83789 C 1278.6523 71.13761 1188.4244 1.1933594 1081.2793 1.1933594 z M 445.86328 5.0332031 L 560.05664 216.26953 L 445.86328 216.26953 L 445.86328 474.44922 L 821.8125 474.44922 L 765.41797 380.56641 L 539.84766 380.56641 L 539.84766 310.15625 L 727.82227 310.15625 L 614.09961 98.916016 L 821.8125 98.916016 L 821.8125 5.0332031 L 445.86328 5.0332031 z M 164.16406 5.109375 L 27.884766 257.1875 L 3.65625 212.37305 L 3.65625 474.52734 L 417.92773 474.52734 L 164.16406 5.109375 z M 1590.7891 7.7519531 L 1337.0273 477.16797 L 1844.5566 477.16797 L 1590.7891 7.7519531 z M 1792.6406 10.466797 L 1792.6406 127.82227 L 1933.6191 127.82227 L 1933.6191 479.88867 L 2027.6055 479.88867 L 2027.6055 127.82227 L 2168.5879 127.82227 L 2168.5879 10.466797 L 1792.6406 10.466797 z M 164.16406 222.44727 L 249.69141 380.64258 L 78.632812 380.64258 L 164.16406 222.44727 z M 1590.7891 225.08984 L 1676.3164 383.28711 L 1505.2617 383.28711 L 1590.7891 225.08984 z "
+				 id="path1451-2" />
+          </g>
+        </svg>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundColor">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <h4>Wer wir sind</h4>
+        <p>Eine sechsköpfige Rockband.</p>
+      </div>
+      <div class="one-half column" style="margin-top: 10%">
+        <p>Lars</p>
+        <p>Daniel</p>
+        <p>Ingo</p>
+        <p>Teich</p>
+        <p>Robert</p>
+        <p>Ingo</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundPic">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <p>Songwriting</p>
+        <p>Aufdrehen</p>
+        <p>Aufnehmen</p>
+        <p>Headbanging</p>
+      </div>
+      <div class="one-half column" style="margin-top: 10%">
+        <h4>Was wir tun</h4>
+        <p>Wir stellen uns hier vor und zeigen euch unsere Philosophie und Herangehensweise...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundColor">
+  <div class="container">
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%; margin-bottom: 10%">
+        <h4>Ein neues Video</h4>
+        <p>Neue Aufnahme von dem Song "Kontakt" live aus unserem Proberaum...</p>
+        <div class="videoWrapperLandscape">
+          <iframe src="https://www.youtube.com/embed/Lehbm9rAHqo?rel=0&hd=1" frameborder="0" allowfullscreen class="videoWrapper">&nbsp;.</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundPic">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <p>&nbsp;</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundColor">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <h4>New Video available</h4>
+        <p>Neue Aufnahme von dem Song "Lightsheed Doom" live aus unserem Proberaum...</p>
+      </div>
+      <div class="one-half column" style="margin-top: 10%; margin-bottom: 10%">
+        <div class="videoWrapperPortrait">
+          <iframe src="https://www.youtube.com/embed/2F3TgNeRl58?rel=0&hd=1" frameborder="0" allowfullscreen class="videoWrapper">&nbsp;.</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section backgroundPic">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <h4>Impressum</h4>
+        <p>Pflichtangaben</p>
+      </div>
+      <div class="one-half column" style="margin-top: 10%">
+        <p>Megaton</p>
+        <p>Musterstraße</p>
+        <p>Musterstadt 54321</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
