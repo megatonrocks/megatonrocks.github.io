@@ -42,5 +42,10 @@ beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten
 Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei
 Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
 
+## Datenschutz
+Das CDN schreibt Logdateien mit den Zugriffen und den IP-Adressen der Zugreifer. Diese dienen der Fehlersuche im Krisenfall und werden ansonsten nicht ausgewertet. Da es hier keine Benutzerkonten und keine Tracking-Cookies o.ä. gibt, betrachte ich diese Logdateien nicht als personenbezogen.
+
+Abgesehen davon werden keine Daten erhoben, gespeichert oder ausgewertet. 
+
 ## Quelle:
 [https://www.e-recht24.de/impressum-generator.html](https://www.e-recht24.de/impressum-generator.html)
